@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Setup Node.js environment
+      - name: Setup do Node.js
         uses: actions/setup-node@v3.8.1
         with:
           node-version: 16.13.2
@@ -23,6 +23,6 @@ jobs:
         run:
           cd src;
           npm install -g mocha;
-          npm install;
+          npm install
             
       
