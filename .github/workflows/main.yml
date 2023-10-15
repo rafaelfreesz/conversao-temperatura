@@ -41,5 +41,6 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            rafaelfreesz/aula-conversao-temperatura:v1
+            rafaelfreesz/aula-conversao-temperatura:${{github.run_number}}
             rafaelfreesz/aula-conversao-temperatura:latest
+# O github.run_number autoincrementa o numero da versao
